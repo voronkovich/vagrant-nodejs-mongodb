@@ -14,10 +14,9 @@ apt-get install -y mongodb-org
 sudo -iu vagrant -g vagrant <<EOF
 mkdir ~/.npm-global;
 npm config set prefix ~/.npm-global;
-echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile;
 EOF
 
 sudo -iu vagrant -g vagrant <<EOF
-npm install -g nodemon;
-nodemon --ext js,html /vagrant/app.js &
+npm install -g node-dev;
 EOF
