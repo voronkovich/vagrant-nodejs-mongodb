@@ -19,5 +19,5 @@ EOF
 
 sudo -iu vagrant -g vagrant <<EOF
 npm install -g nodemon;
-nodemon -L /vagrant/app.js &
+nodemon --ext js,html /vagrant/app.js &
 EOF
